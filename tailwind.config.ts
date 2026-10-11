@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { COLORS } from "./lib/constants";
 
 const config: Config = {
   content: [
@@ -9,11 +10,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        forest: COLORS.forest,
+        bronze: COLORS.bronze,
+        cream: COLORS.cream,
+        charcoal: COLORS.charcoal,
+        "grey-light": COLORS.greyLight,
+      },
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)", "Montserrat", "sans-serif"],
+      },
+      borderRadius: {
+        xl: "12px",
+        "2xl": "16px",
+      },
+      minHeight: {
+        touch: "48px",
       },
     },
   },
   plugins: [],
 };
+
 export default config;
