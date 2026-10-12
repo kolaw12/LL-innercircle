@@ -17,8 +17,8 @@ export default function ServicesPage() {
   const serviceCategories: ServiceCategory[] = [
     {
       id: "dining",
-      title: "Dining & In-Room Orders",
-      description: "Order from Winebar, Revivo, or The Clubhouse",
+      title: "Dining & Room Service",
+      description: "Clubhouse Grill, Wine Bar, and in-room dining",
       href: "/services/request?category=dining",
       icon: (
         <svg className="w-5 h-5 text-cream/70 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -28,8 +28,8 @@ export default function ServicesPage() {
     },
     {
       id: "transport",
-      title: "Transport",
-      description: "Airport pickup, golf carts, local rides",
+      title: "Estate & Airport Rides",
+      description: "Helipad, airport transfers, and golf carts",
       href: "/services/request?category=transport",
       icon: (
         <svg className="w-5 h-5 text-cream/70 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -39,8 +39,8 @@ export default function ServicesPage() {
     },
     {
       id: "wellness",
-      title: "Wellness",
-      description: "Spa, massage, personal training",
+      title: "Spa & Wellness",
+      description: "Massages, hydrotherapy, and fitness",
       href: "/services/request?category=wellness",
       icon: (
         <svg className="w-5 h-5 text-cream/70 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -50,8 +50,8 @@ export default function ServicesPage() {
     },
     {
       id: "events",
-      title: "Event Services",
-      description: "Catering, decor, and photography for your event",
+      title: "Private Events",
+      description: "Lakeside dinners, catering, and celebrations",
       href: "/services/request?category=events",
       icon: (
         <svg className="w-5 h-5 text-cream/70 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -62,8 +62,8 @@ export default function ServicesPage() {
     },
     {
       id: "property",
-      title: "Home & Property",
-      description: "Interior design, property management, rentals",
+      title: "Property Management",
+      description: "Housekeeping, gardening, and villa care",
       href: "/services/request?category=property",
       icon: (
         <svg className="w-5 h-5 text-cream/70 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -117,7 +117,7 @@ export default function ServicesPage() {
         </header>
 
         <p className="stagger-2 font-montserrat text-cream/70 text-sm text-center -mt-4 mb-2 max-w-[280px] mx-auto leading-relaxed font-regular">
-          Everything you need, arranged by the Estate
+          Everything you need,<br />arranged by our estate team
         </p>
 
         {/* Services List */}
@@ -167,7 +167,7 @@ export default function ServicesPage() {
         <section className="stagger-4 p-5 rounded-[20px] bg-[#0c3520]/60 border border-bronze/20 shadow-card space-y-2.5">
           <div className="flex items-center justify-between">
             <span className="font-montserrat text-xs text-bronze uppercase tracking-widest font-semibold">
-              Bespoke Assistance
+              Custom Requests
             </span>
             <span className="font-montserrat text-[11px] text-cream/50 font-medium">24/7 Available</span>
           </div>
@@ -179,7 +179,7 @@ export default function ServicesPage() {
               href="/concierge"
               className="inline-flex items-center gap-1.5 font-montserrat text-xs text-bronze font-semibold hover:underline underline-offset-4 uppercase tracking-wider"
             >
-              Open Concierge Chat
+              Chat with Concierge
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

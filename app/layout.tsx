@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LAKOWE LAKES — Inner Circle",
+  title: "LAKOWE LAKES | Inner Circle",
   description: "Refined private golf & lakeside estate member portal",
 };
 

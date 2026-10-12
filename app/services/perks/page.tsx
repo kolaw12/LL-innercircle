@@ -69,7 +69,7 @@ export default function PartnerPerksPage() {
         </header>
 
         <p className="stagger-2 font-montserrat text-cream/70 text-sm text-center -mt-4 mb-2 max-w-[280px] mx-auto leading-relaxed font-regular">
-          Exclusive discounts and privileges from our partner brands
+          Privileged rates from our luxury partner brands
         </p>
 
         {/* Perks List */}
@@ -109,7 +109,7 @@ export default function PartnerPerksPage() {
                     onClick={() => alert(`Copied privilege code: ${perk.code}`)}
                     className="font-montserrat text-[11px] text-bronze font-semibold uppercase tracking-wider hover:underline"
                   >
-                    Copy Code
+                    Copy Privilege Code
                   </button>
                 </div>
               </div>

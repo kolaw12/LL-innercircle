@@ -8,8 +8,8 @@ export default function MembershipPage() {
   const menuRows = [
     {
       id: "membership-details",
-      label: "Membership Details",
-      subtitle: "Tier benefits & renewal status",
+      label: "Member Privileges",
+      subtitle: "Tier benefits and annual renewal",
       icon: (
         <svg className="w-5 h-5 text-cream/60 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
           <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
@@ -19,7 +19,7 @@ export default function MembershipPage() {
     {
       id: "booking-history",
       label: "Booking History",
-      subtitle: "Past tee times & dining reservations",
+      subtitle: "Past tee times, dining, and spa visits",
       icon: (
         <svg className="w-5 h-5 text-cream/60 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -28,8 +28,8 @@ export default function MembershipPage() {
     },
     {
       id: "payment-methods",
-      label: "Payment Methods",
-      subtitle: "Linked cards & billing account",
+      label: "Payment & Billing",
+      subtitle: "Saved cards and account statements",
       icon: (
         <svg className="w-5 h-5 text-cream/60 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18M7 15h4M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z" />
@@ -38,8 +38,8 @@ export default function MembershipPage() {
     },
     {
       id: "maintenance-requests",
-      label: "Maintenance Requests",
-      subtitle: "Track open property tickets",
+      label: "Property Requests",
+      subtitle: "Track open maintenance and repairs",
       icon: (
         <svg className="w-5 h-5 text-cream/60 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
           <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.83-5.83M11.42 15.17l2.496-3.03c.317-.384.74-.664 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l5.653-4.655M11.42 15.17l-.766 1.208" />
@@ -48,8 +48,8 @@ export default function MembershipPage() {
     },
     {
       id: "settings",
-      label: "Settings",
-      subtitle: "Notifications & security",
+      label: "Account Settings",
+      subtitle: "Notifications, login, and privacy",
       icon: (
         <svg className="w-5 h-5 text-cream/60 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
           <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -60,7 +60,7 @@ export default function MembershipPage() {
     {
       id: "contact-estate-office",
       label: "Contact Estate Office",
-      subtitle: "Direct private helpline",
+      subtitle: "Direct phone and office assistance",
       icon: (
         <svg className="w-5 h-5 text-cream/60 group-hover:text-bronze transition-premium" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -106,7 +106,7 @@ export default function MembershipPage() {
               </span>
             </div>
             <span className="font-montserrat text-bronze text-[10px] font-semibold tracking-widest uppercase border border-bronze/30 px-3 py-1.5 rounded-sm shadow-sm backdrop-blur-sm">
-              Platinum
+              Platinum Member
             </span>
           </div>
 
@@ -140,9 +140,9 @@ export default function MembershipPage() {
             <div className="flex items-center justify-between font-montserrat text-xs text-cream/70 pt-1">
               <span className="font-medium flex items-center gap-1.5">
                 <SignatureMotif size={16} className="text-bronze/80" />
-                Access: All Estates
+                Estate Access: Full Privileges
               </span>
-              <span className="text-bronze font-semibold tracking-widest uppercase text-[10px]">Valid Thru: 12/28</span>
+              <span className="text-bronze font-semibold tracking-widest uppercase text-[10px]">Valid Through: Dec 2028</span>
             </div>
           </div>
         </section>
@@ -185,7 +185,7 @@ export default function MembershipPage() {
         </section>
       </main>
 
-      {/* Bottom Navigation — softened inactive states */}
+      {/* Bottom Navigation */}
       <nav className="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-forest/95 backdrop-blur-md border-t border-cream/10 px-6 py-3 flex items-center justify-between z-50">
         <Link href="/dashboard" className="flex flex-col items-center gap-1.5 text-cream/50 hover:text-cream/70 transition-premium">
           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">

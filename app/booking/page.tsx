@@ -75,7 +75,7 @@ export default function BookingPage() {
         {/* Course Filter */}
         <section className="stagger-2 relative z-40">
           <label className="font-montserrat text-[10px] text-bronze font-semibold uppercase tracking-widest block mb-3">
-            Select Course
+            Choose Golf Course
           </label>
           <div className="relative">
             <button
@@ -126,7 +126,7 @@ export default function BookingPage() {
         {/* Players Filter */}
         <section>
           <label className="font-montserrat text-[13px] text-cream/70 font-medium block mb-3">
-            Number of Players
+            Number of Golfers
           </label>
           <div className="grid grid-cols-4 gap-2.5">
             {[1, 2, 3, 4].map((num) => (
@@ -150,7 +150,7 @@ export default function BookingPage() {
         <section className="space-y-4">
           <div className="flex items-center justify-between px-1">
             <h2 className="font-montserrat text-cream text-lg font-semibold leading-tight">October 2026</h2>
-            <span className="font-montserrat text-xs text-cream/50 font-medium">Select date</span>
+            <span className="font-montserrat text-xs text-cream/50 font-medium">Choose a day</span>
           </div>
           <div className="flex gap-3 overflow-x-auto pb-4 pt-1 scrollbar-none -mx-6 px-6">
             {dates.map((d) => {
@@ -179,7 +179,7 @@ export default function BookingPage() {
         <section className="space-y-4">
           <div className="flex items-center justify-between px-1">
             <h2 className="font-montserrat text-cream text-lg font-semibold leading-tight">Available Times</h2>
-            <span className="font-montserrat text-xs text-cream/50 font-medium">30 min intervals</span>
+            <span className="font-montserrat text-xs text-cream/50 font-medium">Slots every 30 mins</span>
           </div>
           <div className="grid grid-cols-3 gap-2.5">
             {timeSlots.map((slot) => {
@@ -208,17 +208,17 @@ export default function BookingPage() {
         <section className="stagger-4 p-5 rounded-2xl bg-[#0c3520]/50 border border-bronze/20 space-y-3">
           <div className="flex items-center justify-between">
             <span className="font-montserrat text-xs text-cream/70 font-semibold uppercase tracking-wider">
-              Summary
+              Booking Details
             </span>
             <SignatureMotif size={18} className="text-bronze/70" />
           </div>
           <div className="flex items-center justify-between text-xs">
-            <span className="font-montserrat text-cream/60">Selected Time:</span>
+            <span className="font-montserrat text-cream/60">Tee Time:</span>
             <span className="font-montserrat font-bold text-bronze">{selectedTime}</span>
           </div>
           <LuxuryDivider className="my-2" />
           <div className="flex items-center justify-between text-xs">
-            <span className="font-montserrat text-cream/60">Details:</span>
+            <span className="font-montserrat text-cream/60">Players & Course:</span>
             <span className="font-montserrat font-medium text-cream">{selectedPlayers} Guests • {selectedCourse.split(' ')[0]}</span>
           </div>
         </section>
@@ -231,7 +231,7 @@ export default function BookingPage() {
           onClick={() => alert(`Tee time confirmed for ${selectedDate} at ${selectedTime} (${selectedCourse})`)}
           className="btn-luxury-primary"
         >
-          Confirm Booking
+          Reserve Tee Time
         </button>
       </div>
     </div>

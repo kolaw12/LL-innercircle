@@ -18,22 +18,22 @@ const ONBOARDING_STEPS: OnboardingStep[] = [
     id: 1,
     image: "/images/onboarding_course.png",
     alt: "Lakowe Lakes championship course and lush landscape",
-    heading: "Your Estate,\nAlways Within Reach",
-    description: "Book golf, dine, and manage your membership — all in one place.",
+    heading: "Your Estate,\nAlways within reach",
+    description: "Book tee times, dine lakeside, and enjoy estate living.",
   },
   {
     id: 2,
     image: "/images/onboarding_concierge.png",
     alt: "Lakowe Lakes luxury villa and poolside concierge",
-    heading: "A Concierge\nat Your Service",
-    description: "Request anything, anytime. Our team responds directly to you.",
+    heading: "Estate Concierge,\nAt your service",
+    description: "Request dining, rides, or services. Our team is always here for you.",
   },
   {
     id: 3,
     image: "/images/onboarding_lake.png",
     alt: "Lakowe Lakes serene lake and estate living",
     heading: "Welcome to\nthe Inner Circle",
-    description: "Exclusive access, built around how you live.",
+    description: "Private club privileges, crafted around your lifestyle.",
   },
 ];
 
@@ -151,7 +151,7 @@ export default function OnboardingPage() {
             onClick={handleNext}
             className="btn-luxury-primary"
           >
-            {currentStep === 2 ? "Get Started" : "Continue"}
+            {currentStep === 2 ? "Enter Inner Circle" : "Next"}
           </button>
 
           {/* Subtext on final screen */}
@@ -161,7 +161,7 @@ export default function OnboardingPage() {
                 href="/login"
                 className="font-montserrat text-xs text-cream/70 hover:text-cream transition-premium"
               >
-                Already have an account?{" "}
+                Already a member?{" "}
                 <span className="text-bronze font-semibold uppercase tracking-wider underline underline-offset-4">
                   Sign In
                 </span>

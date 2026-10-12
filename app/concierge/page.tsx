@@ -16,7 +16,7 @@ export default function ConciergePage() {
     {
       id: "1",
       sender: "concierge",
-      text: "Good morning, Mr. Johnson. Welcome to the Lakowe Lakes Concierge Desk. How may I assist you with your estate experience today?",
+      text: "Good morning, Mr. Johnson. How may our concierge team assist you today?",
       time: "10:14 AM",
     },
     {
@@ -46,10 +46,10 @@ export default function ConciergePage() {
   }, [messages, isTyping]);
 
   const quickSuggestions = [
-    { label: "Book a Table", icon: <UtensilsIcon /> },
-    { label: "Airport Pickup", icon: <CarIcon /> },
-    { label: "Facilities", icon: <BuildingIcon /> },
-    { label: "Spa", icon: <SparklesIcon /> },
+    { label: "Reserve a Table", icon: <UtensilsIcon /> },
+    { label: "Airport Transfer", icon: <CarIcon /> },
+    { label: "Estate Amenities", icon: <BuildingIcon /> },
+    { label: "Book Spa", icon: <SparklesIcon /> },
   ];
 
   const handleSend = (textToSend?: string) => {
@@ -103,7 +103,7 @@ export default function ConciergePage() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-bronze opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-bronze"></span>
               </span>
-              <span className="font-montserrat text-[9px] text-bronze font-semibold tracking-widest uppercase">Online</span>
+              <span className="font-montserrat text-[9px] text-bronze font-semibold tracking-widest uppercase">Available Now</span>
             </div>
           </div>
 
@@ -177,7 +177,7 @@ export default function ConciergePage() {
               type="text"
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
-              placeholder="Ask Concierge anything..."
+              placeholder="Type your request here..."
               className="flex-1 min-h-[52px] px-5 rounded-2xl bg-cream text-charcoal placeholder-charcoal/40 font-montserrat text-sm border-2 border-transparent focus:outline-none focus:border-bronze focus:ring-1 focus:ring-bronze/50 transition-premium shadow-card"
             />
             <button

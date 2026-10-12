@@ -9,7 +9,7 @@ import LuxuryDivider from "@/components/ui/LuxuryDivider";
 
 const CATEGORY_CONFIG: Record<string, { title: string; defaultService: string; options: string[] }> = {
   dining: {
-    title: "Dining & In-Room Orders",
+    title: "Dining & Room Service",
     defaultService: "Table Reservation",
     options: [
       "Table Reservation",
@@ -20,7 +20,7 @@ const CATEGORY_CONFIG: Record<string, { title: string; defaultService: string; o
     ],
   },
   transport: {
-    title: "Transport",
+    title: "Estate & Airport Rides",
     defaultService: "Airport Pickup",
     options: [
       "Airport Pickup",
@@ -31,7 +31,7 @@ const CATEGORY_CONFIG: Record<string, { title: string; defaultService: string; o
     ],
   },
   wellness: {
-    title: "Wellness",
+    title: "Spa & Wellness",
     defaultService: "Spa & Massage Appointment",
     options: [
       "Spa & Massage Appointment",
@@ -42,7 +42,7 @@ const CATEGORY_CONFIG: Record<string, { title: string; defaultService: string; o
     ],
   },
   events: {
-    title: "Event Services",
+    title: "Private Events",
     defaultService: "Private Catering & Dining",
     options: [
       "Private Catering & Dining",
@@ -53,7 +53,7 @@ const CATEGORY_CONFIG: Record<string, { title: string; defaultService: string; o
     ],
   },
   property: {
-    title: "Home & Property",
+    title: "Property Management",
     defaultService: "Housekeeping & Turn-down",
     options: [
       "Housekeeping & Turn-down",
@@ -135,13 +135,13 @@ function ServiceRequestContent() {
             </svg>
           </Link>
           <h1 className="font-montserrat text-cream text-lg font-bold leading-tight tracking-tight text-center truncate max-w-[240px]">
-            Request: {config.title}
+            Request {config.title}
           </h1>
           <div className="w-10" />
         </header>
 
         <p className="stagger-2 font-montserrat text-cream/70 text-sm text-center -mt-4 mb-2 max-w-[280px] mx-auto leading-relaxed font-regular">
-          Tell us what you need — our team will arrange it.
+          Tell us your preferences.<br />Our team will handle the rest.
         </p>
 
         {/* Form */}
@@ -296,7 +296,7 @@ function ServiceRequestContent() {
           type="button"
           className="btn-luxury-primary"
         >
-          Submit Request
+          Send Request
         </button>
       </div>
 
@@ -304,12 +304,12 @@ function ServiceRequestContent() {
       <SuccessModal
         isOpen={isSubmitted}
         onClose={() => setIsSubmitted(false)}
-        title="Request Submitted"
+        title="Request Received"
         referenceNumber={referenceNumber}
         description={`We have received your request for ${serviceType} at ${location || "your estate location"}. Our team will confirm shortly.`}
-        buttonText="Return to Estate Services"
+        buttonText="Back to Estate Services"
         onButtonClick={() => router.push("/services")}
-        secondaryButtonText="Submit Another Request"
+        secondaryButtonText="Make Another Request"
         onSecondaryButtonClick={() => {
           setIsSubmitted(false);
           setLocation("");

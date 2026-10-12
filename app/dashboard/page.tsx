@@ -73,14 +73,12 @@ export default function DashboardPage() {
             </span>
           </div>
 
-          <Link href="/membership" className="relative w-10 h-10 rounded-full overflow-hidden border border-cream/20 shadow-card transition-premium focus:outline-none focus:ring-2 focus:ring-bronze flex-shrink-0">
-            <Image
-              src="/images/member_avatar.png"
-              alt="Member Avatar"
-              fill
-              className="object-cover"
-              sizes="40px"
-            />
+          <Link
+            href="/membership"
+            className="w-10 h-10 rounded-full bg-cream flex items-center justify-center border border-bronze/30 shadow-card transition-premium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-bronze flex-shrink-0"
+            aria-label="Johnson Alexander Membership Profile"
+          >
+            <span className="font-montserrat text-forest font-bold text-xs tracking-wider">JA</span>
           </Link>
         </header>
 
@@ -90,7 +88,7 @@ export default function DashboardPage() {
             Welcome back,<br />Johnson
           </h1>
           <p className="font-montserrat text-cream/50 text-sm leading-relaxed max-w-[240px] font-regular">
-            What would you like to do today?
+            What would you like to arrange today?
           </p>
         </section>
 
@@ -114,7 +112,7 @@ export default function DashboardPage() {
                 Book Golf
               </h3>
               <p className="font-montserrat text-cream/80 text-[11px] font-medium tracking-wide">
-                Championship Course
+                18-Hole Championship Course
               </p>
             </div>
           </Link>
@@ -159,7 +157,7 @@ export default function DashboardPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M14.83 9.17l1.586-1.586a1.5 1.5 0 10-2.122-2.122l-1.585 1.586m2.121 2.122l-3.03 2.496m-1.208-.766l2.496-3.03" />
                 </svg>
               </div>
-              <h3 className="font-montserrat text-cream text-xs font-semibold transition-premium leading-tight drop-shadow-sm">Fixes</h3>
+              <h3 className="font-montserrat text-cream text-xs font-semibold transition-premium leading-tight drop-shadow-sm">Property Care</h3>
             </Link>
 
             <Link
@@ -172,7 +170,7 @@ export default function DashboardPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18M7 15h4" />
                 </svg>
               </div>
-              <h3 className="font-montserrat text-cream text-xs font-semibold transition-premium leading-tight drop-shadow-sm">Profile</h3>
+              <h3 className="font-montserrat text-cream text-xs font-semibold transition-premium leading-tight drop-shadow-sm">My Membership</h3>
             </Link>
           </div>
         </section>
@@ -183,10 +181,10 @@ export default function DashboardPage() {
         <section className="stagger-4 space-y-4">
           <div className="flex items-center justify-between px-1">
             <h2 className="font-montserrat text-cream text-lg font-semibold leading-tight">
-              Upcoming Bookings
+              Your Bookings
             </h2>
             <Link href="/booking" className="font-montserrat text-bronze text-xs font-semibold hover:underline underline-offset-2 transition-premium">
-              View All
+              See all
             </Link>
           </div>
 
@@ -239,10 +237,10 @@ export default function DashboardPage() {
         <section className="stagger-5 space-y-4">
           <div className="flex items-center justify-between px-1">
             <h2 className="font-montserrat text-cream text-lg font-semibold leading-tight">
-              Estate Updates
+              Estate Events
             </h2>
             <button className="font-montserrat text-bronze text-xs font-semibold hover:underline underline-offset-2 transition-premium">
-              View All
+              See all
             </button>
           </div>
 
@@ -279,7 +277,7 @@ export default function DashboardPage() {
                   </p>
                   <div className="pt-4 border-t border-cream/10 flex justify-end">
                     <button className="font-montserrat text-bronze text-xs font-semibold flex items-center gap-1.5 hover:gap-2 transition-all uppercase tracking-wider">
-                      RSVP
+                      Reserve Spot
                       <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>
@@ -292,7 +290,7 @@ export default function DashboardPage() {
         </section>
       </main>
 
-      {/* Bottom Navigation Bar — softened inactive states */}
+      {/* Bottom Navigation Bar */}
       <nav className="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-forest/95 backdrop-blur-md border-t border-cream/10 px-6 py-3 flex items-center justify-between z-50">
         <Link href="/dashboard" className="flex flex-col items-center gap-1.5 text-bronze relative">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

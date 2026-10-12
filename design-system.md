@@ -1,7 +1,7 @@
-# LAKOWE LAKES — Inner Circle Design System
+# LAKOWE LAKES | Inner Circle Design System
 
 ## Brand & Aesthetic Vision
-Refined private golf & lakeside estate — warm, heritage, restrained luxury (not clinical/fintech). Generous whitespace, soft shadows, rounded corners (12-16px), no clutter.
+Refined private golf & lakeside estate: warm, heritage, restrained luxury (not clinical/fintech). Generous whitespace, soft shadows, rounded corners (12-16px), no clutter.
 
 ## Design Tokens & Palette
 
@@ -12,8 +12,8 @@ Refined private golf & lakeside estate — warm, heritage, restrained luxury (no
 - **Body Text (`grey-light` / `text-grey-light`)**: `#e5e5e5` (Light Grey)
 
 ### Typography
-- **Heading / Logo Font**: `Playfair Display` (serif) — loaded via Google Fonts / `next/font/google`
-- **UI / Body Font**: `Inter` (sans-serif) — loaded via Google Fonts / `next/font/google`
+- **Heading / Logo Font**: `Playfair Display` (serif) (loaded via Google Fonts / `next/font/google`)
+- **UI / Body Font**: `Inter` (sans-serif) (loaded via Google Fonts / `next/font/google`)
 
 ### UI & Layout Rules
 - **Minimum Touch Target**: 48px height (`min-h-[48px]`, `h-12`) for all buttons, inputs, and interactive elements.

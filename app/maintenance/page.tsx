@@ -62,20 +62,20 @@ export default function MaintenancePage() {
             </svg>
           </Link>
           <h1 className="font-montserrat text-cream text-xl font-bold leading-tight tracking-tight">
-            Maintenance
+            Property Care
           </h1>
           <div className="w-10" />
         </header>
 
         <p className="stagger-2 font-montserrat text-cream/70 text-sm text-center -mt-4 mb-2 max-w-[280px] mx-auto leading-relaxed font-regular">
-          Let us know what needs attention — our team will respond promptly.
+          Tell us what needs attention.<br />Our team will respond promptly.
         </p>
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="stagger-3 space-y-6">
           <div className="space-y-2 relative z-40">
             <label className="font-montserrat text-[10px] text-bronze font-semibold uppercase tracking-widest block pl-1">
-              Category
+              Service Category
             </label>
             <div className="relative">
               <button
@@ -133,14 +133,14 @@ export default function MaintenancePage() {
               required
               value={location}
               onChange={(e) => setLocation(e.target.value)}
-              placeholder="e.g. Cottage 14, Clubhouse"
+              placeholder="e.g., Cottage 14 or Lake Villa 3"
               className="w-full min-h-[52px] px-5 rounded-2xl bg-cream text-charcoal placeholder-charcoal/40 font-montserrat text-sm border-2 border-transparent focus:outline-none focus:border-bronze focus:ring-1 focus:ring-bronze/50 transition-premium shadow-card"
             />
           </div>
 
           <div className="space-y-2">
             <label className="font-montserrat text-[13px] text-cream/70 font-medium block pl-1">
-              Priority Level
+              Urgency
             </label>
             <div className="grid grid-cols-3 gap-2.5">
               {(["Low", "Medium", "High"] as const).map((level) => (
@@ -172,7 +172,7 @@ export default function MaintenancePage() {
               rows={4}
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              placeholder="Describe the issue in detail..."
+              placeholder="Describe what needs to be fixed..."
               className="w-full p-5 rounded-2xl bg-cream text-charcoal placeholder-charcoal/40 font-montserrat text-sm border-2 border-transparent focus:outline-none focus:border-bronze focus:ring-1 focus:ring-bronze/50 transition-premium shadow-card resize-none"
             />
           </div>
@@ -203,7 +203,7 @@ export default function MaintenancePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <span className="font-montserrat text-xs text-cream/60 font-medium text-center uppercase tracking-wider">
-                  Tap to add a photo
+                  Add a photo (optional)
                 </span>
               </label>
             )}
@@ -218,7 +218,7 @@ export default function MaintenancePage() {
           type="submit"
           className="btn-luxury-primary"
         >
-          Submit Request
+          Send Request
         </button>
       </div>
 
@@ -226,12 +226,12 @@ export default function MaintenancePage() {
       <SuccessModal
         isOpen={isSubmitted}
         onClose={() => setIsSubmitted(false)}
-        title="Request Submitted"
+        title="Request Received"
         referenceNumber={referenceNumber}
-        description={`Our estate maintenance team has received your ticket and will be in touch shortly to attend to ${location || "your property"}.`}
-        buttonText="Return to Dashboard"
+        description={`Our team has received your request and will attend to ${location || "your property"} shortly.`}
+        buttonText="Back to Home"
         onButtonClick={() => router.push("/dashboard")}
-        secondaryButtonText="Submit Another Request"
+        secondaryButtonText="Request Another Repair"
         onSecondaryButtonClick={() => {
           setIsSubmitted(false);
           setLocation("");

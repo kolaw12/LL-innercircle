@@ -38,7 +38,7 @@ export default function LoginPage() {
             to the Inner Circle
           </p>
           <p className="font-montserrat text-grey-light/70 text-sm leading-relaxed font-regular">
-            Sign in to access your member portal
+            Sign in to your member account
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export default function LoginPage() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email Address"
+              placeholder="Your member email"
               className="w-full min-h-[50px] px-4 rounded-xl bg-cream text-charcoal placeholder-charcoal/40 font-montserrat text-sm border border-transparent focus:outline-none focus:border-bronze focus:ring-1 focus:ring-bronze/40 transition-premium shadow-card"
             />
           </div>
@@ -92,13 +92,13 @@ export default function LoginPage() {
               href="/verify"
               className="font-montserrat text-bronze text-xs font-semibold hover:underline focus:outline-none focus:underline transition-premium"
             >
-              Use a one-time code instead
+              Sign in with email code
             </Link>
             <a
               href="#forgot-password"
               className="font-montserrat text-cream/60 hover:text-bronze text-xs font-medium hover:underline focus:outline-none focus:underline transition-premium"
             >
-              Forgot Password?
+              Forgot password?
             </a>
           </div>
 
@@ -107,7 +107,7 @@ export default function LoginPage() {
               type="submit"
               className="btn-luxury-primary"
             >
-              Login
+              Sign In
             </button>
           </div>
         </form>
@@ -118,7 +118,7 @@ export default function LoginPage() {
             <p className="font-montserrat text-grey-light/60 text-xs leading-relaxed">
               Need access?{" "}
               <a href="#contact-office" className="text-bronze hover:text-cream underline underline-offset-2 font-medium transition-premium">
-                Contact the Estate Office
+                Contact the estate office
               </a>
             </p>
           </div>

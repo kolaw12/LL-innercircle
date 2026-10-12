@@ -107,10 +107,10 @@ export default function VerifyOtpPage() {
           {/* Heading & Subtext */}
           <div className="stagger-2 text-center space-y-3 mt-4">
             <h1 className="font-montserrat text-cream text-2xl sm:text-3xl font-bold leading-tight tracking-tight">
-              Enter Verification Code
+              Enter your 4-digit code
             </h1>
             <p className="font-montserrat text-cream/70 text-sm leading-relaxed max-w-[280px] mx-auto font-regular">
-              We&apos;ve sent a 4-digit code to your registered email{" "}
+              We sent a 4-digit code to your email:{" "}
               <span className="text-cream font-medium block mt-1">member@lakowelakes.com</span>
             </p>
           </div>
@@ -161,7 +161,7 @@ export default function VerifyOtpPage() {
               type="submit"
               className="btn-luxury-primary"
             >
-              Continue
+              Verify & Sign In
             </button>
           </form>
         </div>
@@ -170,13 +170,13 @@ export default function VerifyOtpPage() {
         <div className="stagger-4 text-center pt-8 pb-4">
           <LuxuryDivider variant="diamond" className="opacity-40 mb-6" />
           <p className="font-montserrat text-cream/60 text-xs">
-            Didn&apos;t receive code?{" "}
+            Didn&apos;t get the code?{" "}
             <button
               type="button"
               onClick={handleResend}
               className="font-montserrat text-bronze font-semibold uppercase tracking-wider hover:underline focus:outline-none focus:underline ml-1 transition-premium"
             >
-              Resend Code
+              Send again
             </button>
           </p>
         </div>
@@ -186,9 +186,9 @@ export default function VerifyOtpPage() {
       <SuccessModal
         isOpen={showSuccessModal}
         onClose={() => setShowSuccessModal(false)}
-        title="Verification Successful"
-        description="Welcome back to the Estate. Your member credentials have been confirmed."
-        buttonText="Enter Dashboard"
+        title="Welcome to Inner Circle"
+        description="Your member access is confirmed. Enjoy your time at the estate."
+        buttonText="Go to Home"
         onButtonClick={() => {
           setShowSuccessModal(false);
           router.push("/dashboard");
